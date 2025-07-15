@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .cont {
+            margin: 10vh;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 5vh;
+        }
+        .cont span {
+            font-size: 10vh;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            color: #fd8801;
+        }
+        .cont button {
+            margin-left: 35vh;
+            background-color: transparent;
+            color: white;
+            border: 1px solid #fd8801;
+            border-radius: 3vh;
+            padding: 1vh 2vh;
+            font-size: 3vh;
+            cursor: pointer;
+        }
+        .cont button a {
+            text-decoration: none;
+            color: #fd8801;
+        }
+        .cont button:hover {
+            background-color: #fd8801;
+            color: black;
+            border: 1px solid black;
+            transform: scale(1.1);
+        }
+        .cont button:hover a {
+            transform: scale(1.1);
+            color: black;
+            box-shadow: #fd8801 0px 0px 20px 10px;
+        }
+        @media (max-width:768px){
+            .cont {
+                margin: 10vh;
+                padding: 0;
+                font-size: 2.5vh;
+            }
+        }
+        @media (max-width:320px) {
+            .cont {
+                width: 90%;
+                margin: 5vh;
+                padding: 0;
+                font-size: 2vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <div id="main">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="myfunction()">Menu</button>
+            <hr style="border: 1px solid #fd8801;">
+        </div>
+        <div class="cont">
+            <pre>Hello, My Name is:
+<span>YOUSUF</span>
+I am a <i><u>Frontend Developer.</u></i></pre>
+            <button><a href="contact.html">Contact me</a></button>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>

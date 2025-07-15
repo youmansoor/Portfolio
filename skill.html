@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        #Container {
+            height: auto;
+        }
+        #cont {
+            width: 95%;
+            height: auto;
+            overflow: auto;
+            justify-self: center;
+        }
+        .sub-section {
+            justify-self: center;
+            width: 90%;
+            height: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            margin: 1.5vh;
+            border-top: 5px solid #fd8801;
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+            border-bottom: 5px solid white;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+            height: 45vh;
+            overflow: scroll;
+            animation: rotateBorder 4s infinite linear;
+        }
+        
+        @keyframes rotateBorder {
+    0% {
+        border-top: 5px solid #fd8801;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    25% {
+        border-top: 5px solid white;
+        border-left: 5px solid white;
+        border-right: 5px solid #fd8801;
+        border-bottom: 5px solid white;
+    }
+    50% {
+        border-top: 5px solid white;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid #fd8801;
+    }
+    75% {
+        border-top: 5px solid white;
+        border-left: 5px solid #fd8801;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    100% {
+        border-top: 5px solid #fd8801;
+        border-left: 5px solid white;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+}
+@media (max-width: 768px){
+    .box {
+        margin: 1.1vh;
+        width: 45%;
+    }
+}
+@media (max-width: 425px){
+    .box {
+        justify-self: center;
+        font-size: 2.5vh;
+        margin: 2vh;
+        width: 90%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <div id="main">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="myfunction()">Menu</button>
+            <hr style="border: 1px solid #fd8801;">
+        </div>
+        <div id="cont">
+            <h1><u>My <span style="color: #fd8801;"><u>Skills.</u></span></u></h1>
+            <section class="sub-section">
+                <div class="box">
+                    <img src="code.png" alt="" width="30%" height="30%">
+                    <h1><span style="color: #fd8801;"><u>Html</u></h1>
+                    <p>HTML (HyperText Markup Language) is the standard language used to create and design web pages. It uses a system of tags to define the structure and content of a webpage, such as headings, paragraphs, links, images, and more. HTML documents are made up of elements that describe the content and its presentation.</p>
+                </div>
+                <div class="box">
+                    <img src="braces.png" alt="" width="25%" height="25%">
+                    <h1><span style="color: #fd8801;"><u>CSS</u></h1>
+                    <p>CSS (Cascading Style Sheets) is used to style and format the layout of web pages. It controls the visual appearance of HTML elements, such as colors, fonts, spacing, and positioning. CSS allows you to separate content (HTML) from design, making websites more flexible and easier to maintain. It can be applied inline, in a tag, or in an external stylesheet.</p>
+                </div>
+                <div class="box">
+                    <img src="javascript (1).png" alt="" width="25%" height="25%">
+                    <h1><span style="color: #fd8801;"><u>JavaScript</u></h1>
+                    <p>JavaScript is a programming language used to create dynamic and interactive effects on websites. It allows you to manipulate HTML and CSS, control browser events (like clicks or key presses), and update content without reloading the page. JavaScript can be used for tasks such as form validation, animations, handling user input, and making API calls, making websites more responsive and engaging.</p>
+                </div>
+                <div class="box">
+                    <img src="git.png" alt="" width="25%" height="25%">
+                    <h1><span style="color: #fd8801;"><u>Git</u></h1>
+                    <p>Git is a version control system that helps track changes in files and collaborate on projects. It allows multiple developers to work on the same codebase without overwriting each other’s work. Git records the history of changes, making it easy to revert to previous versions, branch out for new features, and merge changes from different contributors. It is commonly used with platforms like GitHub and GitLab for collaborative software development.</p>
+                </div>
+                <div class="box">
+                    <img src="file.png" alt="" width="25%" height="25%">
+                    <h1><span style="color: #fd8801;"><u>JSON</u></h1>
+                    <p>JSON (JavaScript Object Notation) is a lightweight data format used for storing and exchanging data. It is easy for humans to read and write and easy for machines to parse and generate. JSON is commonly used in APIs and web applications to send data between a client and server. It consists of key-value pairs and supports data types like strings, numbers, arrays, and objects.</p>
+                </div>    
+            </section>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>

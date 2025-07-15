@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .contact {
+            width: 80%;
+            justify-self: center;
+            text-align: center;
+            height: auto;
+            overflow: auto;
+            margin: 5vh;
+        }
+        input {
+            margin: 0.5vh;
+            padding: 2vh;
+            background-color: rgb(44, 43, 43);
+            color: #fff;
+        }
+        textarea {
+            width: 45%;
+            height: 15vh;
+            background-color: rgb(44, 43, 43);
+            color: #fff;
+        }
+        #Sub {
+            background-color: #fd8801;
+        }
+        @media (max-width: 768px){
+            textarea{
+                width: 82%;
+            }
+            .contact {
+                height: auto;
+                overflow: auto;
+            }
+        }
+        @media (max-width: 425px){
+            .contact{
+                width: 95%;
+                font-size: 2.5vh;
+            }
+            input{
+                font-size: 2.5vh;
+                padding: 0.8vh;
+                width: 30%;
+            }
+            textarea {
+                width: 68%;
+            }
+        }
+        @media (max-width:320px){
+            .contact {
+                width: 100%;
+            }
+            input {
+                font-size: 2vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <div id="main">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="myfunction()">Menu</button>
+            <hr style="border: 1px solid #fd8801;">
+        </div>
+        <div class="contact">
+            <h1>For <span style="color: #fd8801;">Contact.</span></h1>
+            <form action="">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your E-mail"><br>
+                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Address"><br>
+                <textarea name="" id="" placeholder="Type your message..."></textarea><br><br>
+                <button type="submit" id="Sub" onclick="Submit()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>

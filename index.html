@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar" id="top">
+        <div class="container nav-container">
+            <div class="logo">Portfolio.</div>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- hero section -->
+    <section id="hero" class="hero">
+        <h1>Hi, I'm <span class="highlight">Yousuf</span></h1>
+        <p class="tagline">And I am a <span id="changing-text" class="highlight">Front-end Developer</span></p>
+        <div class="buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m a passionate Front-End Developer with a strong foundation in HTML, CSS, JavaScript, JSON, and jQuery. I specialize in creating responsive and user-friendly web interfaces, and I have hands-on experience building WordPress websites and themes. I also use Figma for UI/UX design, enabling me to translate ideas into polished web experiences. I'm constantly learning and exploring new tools to build beautiful, accessible, and performant websites.</p>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Your Name" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="WWG.png" alt="Project 1" />
+                    <h3>World Wonders Guide.</h3>
+                    <p>WorldWondersGuide is a static website that showcases detailed information about some of the world’s most iconic monuments and historical landmarks. Built with HTML, CSS, JavaScript, and jQuery, the site is fully responsive and designed with an elegant, easy-to-navigate layout. It serves as an educational resource for users interested in global architecture and cultural heritage. Deployed on GitHub Pages.</p>
+                    <div class="project-links">
+                        <a href="https://youmansoor.github.io/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/youmansoor/youmansoor.github.io" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- Skills section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">jQuery</div>
+                <div class="skill-card">JSON</div>
+                <div class="skill-card">WordPress</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">Figma</div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Educations section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2>Experience & Education</h2>
+            <div class="exp-grid">
+                <!-- Experience -->
+                <div class="exp-column">
+                    <h3>Experience</h3>
+                    <div class="exp-item">
+                        <h4></h4>
+                        <p class="exp-place"></p>
+                        <p class="exp-date"></p>
+                        <p class="exp-desc"></p>
+                    </div>
+                    <!-- Education -->
+                    <div class="exp-column">
+                        <h3>Education</h3>
+                        <div class="exp-item">
+                            <h4>Advance Diploma In Software Engineering</h4>
+                            <p class="exp-place">Aptech Gulshan-e-Maymar</p>
+                            <p class="exp-date">2024</p>
+                            <p class="exp-desc">Completed hands-on projects in HTML, CSS, JavaScript, and WordPress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section-->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p class="contact-info">You can reach me via email or connect with me on social platforms.</p>
+                <!-- Optional Contact Form -->
+                <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p><strong>Phone:</strong> +123-456-7890</p>
+                    <div class="social-links">
+                        <a href="https://github.com/youmansoor" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                        <!-- Add more if needed -->
+                    </div>
+                </div>
+                <!-- <div class="footer-socials">
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                </div> -->
+                <a href="#hero" class="back-to-top">↑ Back to Top</a>
+            </div>
+        </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animation happens only once as you scroll
+    duration: 1000,
+  });
+</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
