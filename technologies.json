@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "HTML"
+    },
+    {
+        "id": 2,
+        "name": "CSS"
+    },
+    {
+        "id": 3,
+        "name": "Bootstrap"
+    },
+    {
+        "id": 4,
+        "name": "Angular"
+    },
+    {
+        "id": 5,
+        "name": "PHP"
+    },
+    {
+        "id": 6,
+        "name": "Laravel"
+    },
+    {
+        "id": 7,
+        "name": "MySQL"
+    },
+    {
+        "id": 8,
+        "name": "SQL"
+    },
+    {
+        "id": 9,
+        "name": "WordPress"
+    },
+    {
+        "id": 10,
+        "name": "JavaScript"
+    },
+    {
+        "id": 11,
+        "name": "C#"
+    },
+    {
+        "id": 12,
+        "name": "Figma"
+    },
+    {
+        "id": 12,
+        "name": "SEO"
+    }
+]
