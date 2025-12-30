@@ -1,0 +1,20 @@
+<section id="projects">
+  <div class="projects-container">
+    <h2>My Projects</h2>
+    <p>Some of the websites and applications I have built:</p>
+
+    <div class="projects-grid">
+      @for(project of projects;track project){
+        <div class="project-card">
+        <img src="{{project.image}}" alt="Project 1">
+        <div class="project-info">
+          <h3>{{project.name}}</h3>
+          <p>{{project.description}}</p>
+          <a href="{{project.demo}}" target="_blank">Live</a>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

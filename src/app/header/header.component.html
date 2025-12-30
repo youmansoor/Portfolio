@@ -1,0 +1,23 @@
+<header>
+    <div id="container">
+        <div class="gradient-text">
+            <a routerLink="/">
+            <h1>Your Name</h1>
+            </a>
+        </div>
+        <div class="hamburger" (click)="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+        <nav [class.active]="menuOpen">
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li><a routerLink="about">About</a></li>
+                <li><a routerLink="skills">Skills</a></li>
+                <li><a routerLink="projects">Projects</a></li>
+                <li><a routerLink="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

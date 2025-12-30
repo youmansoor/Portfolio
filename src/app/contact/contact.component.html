@@ -1,0 +1,22 @@
+<section id="contact">
+  <div class="contact-container">
+    <h2>Contact <span>Me</span></h2>
+    <p>Feel free to reach out for collaborations or just to say hi!</p>
+
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <form #userFrom="ngForm" (ngSubmit)="add(userFrom.value)">
+        <input type="text" placeholder="Your Name" name="name" ngModel required>
+        <input type="email" placeholder="Your Email" name="email" ngModel required>
+        <textarea placeholder="Your Message" rows="5" name="feedback" ngModel required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <h3>Find me on</h3>
+        <a href="" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+/* styles.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #3b3b5c); /* classic dark gradient */
+}
+
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* behind header and content */
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* doesn’t block clicks */
+}

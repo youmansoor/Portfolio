@@ -1,0 +1,102 @@
+<div id="hero">
+    <div class="hero-content">
+        <h1>Hi, I am <span>Your Name</span></h1>
+        <h2>I am a <span id="role"></span></h2>
+        <p>I’m a beginner web developer passionate about learning and building real-world, responsive websites.</p>
+        <button type="button" id="btn" routerLink="projects">View Projects</button>
+        <button type="button" id="btn2" routerLink="contact">Get in Touch</button>
+    </div>
+</div>
+<section id="about">
+  <div class="about-container">
+    <h2><span>About</span> Me</h2>
+    <p>
+      I’m a beginner web developer passionate about learning and building modern, responsive websites.
+      I have experience with HTML, CSS, JavaScript, PHP, Laravel, WordPress, MySQL, C#, Bootstrap, Figma, and SEO.
+    </p>
+
+    <div class="skills-cards">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, Laravel, WordPress</p>
+      </div>
+      <div class="skill-card">
+        <h3>Database & Backend</h3>
+        <p>MySQL, SQL, C#</p>
+      </div>
+      <div class="skill-card">
+        <h3>Design & Tools</h3>
+        <p>Figma, SEO, JSON</p>
+      </div>
+    </div>
+
+    <button class="hover-grow" routerLink="/about">More About Me</button>
+  </div>
+</section>
+<section id="skills">
+  <div class="skills-container">
+    <h2>My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Angular</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">PHP / Laravel</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 65%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">WordPress</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+    <button class="hover-grow" routerLink="/skills">View All Skills</button>
+  </div>
+</section>
+<section id="home-projects">
+  <div class="projects-container">
+    <h2>Featured <span>Projects</span></h2>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://raw.githubusercontent.com/youmansoor/portfolio/master/WorldWondersGuide.png" alt="Project 1">
+        <div class="project-info">
+          <h3>World Wonders Guide</h3>
+          <p>A travel guide website showcasing famous monuments like the Taj Mahal, Great Wall of China, Machu Picchu, and Colosseum, with images and descriptions for easy exploration.</p>
+          <div class="project-buttons">
+            <a href="https://youmansoor.github.io/" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/youmansoor/youmansoor.github.io" target="_blank" class="btn">GitHub</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    <button class="hover-grow" routerLink="/projects">View All Projects</button>
+  </div>
+</section>
+<app-contact></app-contact>
+<!-- <router-outlet></router-outlet> -->

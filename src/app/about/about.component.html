@@ -1,0 +1,50 @@
+<!-- ABOUT HERO -->
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1><span>About</span> Me</h1>
+    <p>
+      I build modern, responsive web applications with a strong focus on clean
+      code, performance, and user experience.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT MAIN -->
+<section class="about-main">
+  <div class="about-text">
+    <h2><span>Who</span> I Am</h2>
+    <p>
+      I’m a web developer passionate about creating scalable and maintainable
+      web solutions. I enjoy transforming ideas and designs into clean,
+      functional interfaces.
+    </p>
+
+    <p>
+      I continuously improve my skills by building real-world projects and
+      learning modern frameworks and best practices.
+    </p>
+  </div>
+
+  <div class="about-highlights">
+    <div>Clean & Maintainable Code</div>
+    <div>Responsive UI Development</div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="about-timeline">
+  <h2>My <span class="gradient-text">Journey</span></h2>
+
+  <div class="timeline">
+    @for(jour of journey;track jour){
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span>{{jour.time}}</span>
+        <p>{{jour.detail}}</p>
+      </div>
+    </div>
+  }
+  </div>
+</section>
+<!-- <router-outlet></router-outlet> -->
