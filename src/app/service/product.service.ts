@@ -11,16 +11,16 @@ export class ProductService {
   constructor(private http:HttpClient) { }
 
   getproducts(){
-    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/master/projects.json';
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/projects.json';
     return this.http.get(url);
 
   }
   gettechnologies(){
-    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/master/technologies.json';
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/technologies.json';
     return this.http.get(url);
   }
   getjourney(){
-    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/master/journey.json';
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/journey.json';
     return this.http.get(url);
   }
   url = 'http://localhost:3000/feedbacks';
