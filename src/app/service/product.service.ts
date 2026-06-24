@@ -8,7 +8,7 @@ import { feedback } from '../../interface/feedback';
 })
 export class ProductService {
 
-  url = "https://script.google.com/macros/s/AKfycbxc8TGBVPY_zn2174v-i3UhcnS5I_P4qaKXOqEyFv4oHkcqqM5JeswpGiy4CYbTzfE/exec";
+  url = "https://script.google.com/macros/s/AKfycbzLXjTXufxnXeD_8Ae4Xfg-K0RThCl6ZC7aLHO3xRgHR6SbtOucTw2gNX_pUKWVrVM/exec";
   constructor(private http:HttpClient) { }
 
   getproducts(){
