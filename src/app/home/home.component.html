@@ -3,7 +3,7 @@
         <h1>Hi, I am <span>Your Name</span></h1>
         <h2>I am a <span id="role">Junior Full Stack Developer</span></h2>
         <p>I am an aspiring Full Stack Developer currently pursuing ADSE and passionate about building modern, responsive, and scalable web applications. I have hands-on experience with Angular, Laravel, ASP.NET Web APIs, MySQL, SQL Server, and modern frontend technologies.</p>
-        <button type="button" id="btn" (click)="downloadCV()">Download My CV</button>
+        <button type="button" id="btn" (click)="downloadCV()">Download My CV</button><br>
         <button type="button" id="btn" routerLink="projects">View Projects</button>
         <button type="button" id="btn2" routerLink="contact">Get in Touch</button>
     </div>
@@ -39,42 +39,46 @@
   <div class="skills-container">
     <h2>My <span>Skills</span></h2>
     <div class="skills-grid">
-      <div class="skill">
-        <div class="skill-name">HTML</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 90%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">CSS</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 85%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">JavaScript</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 75%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Angular</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 70%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">PHP / Laravel</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 65%;"></div>
-        </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">WordPress</div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 80%;"></div>
-        </div>
-      </div>
+      <div class="skills-cards">
+
+  <div class="skill-card">
+    <h3>🌐 Web Application Development</h3>
+    <p>
+      I can build complete responsive websites and web applications using modern frontend and backend technologies.
+    </p>
+    <p>
+      <strong>Tech Used:</strong> HTML, CSS, JavaScript, Bootstrap, Angular, Laravel, ASP.NET Web API
+    </p>
+  </div>
+
+</div>
+      <div class="skill-card">
+  <h3>🔗 API Development & Integration</h3>
+  <p>
+    I develop and consume RESTful APIs for dynamic and data-driven applications.
+  </p>
+  <p>
+    <strong>Tech Used:</strong> Web APIs, JSON, Authentication, Frontend–Backend Integration
+  </p>
+</div>
+      <div class="skill-card">
+  <h3>🗃️ Database Management</h3>
+  <p>
+    I design and manage relational databases with efficient queries and structured schema.
+  </p>
+  <p>
+    <strong>Tech Used:</strong> MySQL, SQL Server, CRUD Operations
+  </p>
+</div>
+      <div class="skill-card">
+  <h3>🔄 Version Control & Collaboration</h3>
+  <p>
+    I manage code efficiently using industry-standard tools and collaboration workflows.
+  </p>
+  <p>
+    <strong>Tech Used:</strong> Git, GitHub, Visual Studio Code
+  </p>
+</div>
     </div>
     <button class="hover-grow" routerLink="/skills">View All Skills</button>
   </div>
