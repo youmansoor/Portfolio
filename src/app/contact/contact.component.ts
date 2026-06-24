@@ -24,18 +24,13 @@ export class ContactComponent {
   add(data: any) {
   fetch(this.url, {
     method: "POST",
+    mode: "no-cors",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(data)
-  })
-  .then(res => res.json())
-  .then(response => {
-    console.log(response);
-    alert("Data saved successfully!");
-  })
-  .catch(err => {
-    console.error(err);
   });
+
+  alert("Submitted (check sheet)");
 }
 }
