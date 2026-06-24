@@ -37,6 +37,7 @@ span {
     text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
 }
 #btn {
+  gap: 2px;
     background: linear-gradient(90deg, #a855f7, #38bdf8);
     border: none;
     border-radius: 25px;
@@ -109,7 +110,13 @@ span {
   justify-content: center;
   margin-bottom: 40px;
 }
-
+.skilled-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 .skill-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
