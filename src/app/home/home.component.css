@@ -113,7 +113,7 @@ span {
 .skilled-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
   margin-bottom: 40px;
 }
