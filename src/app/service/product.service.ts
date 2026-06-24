@@ -11,19 +11,19 @@ export class ProductService {
   url = "https://script.google.com/macros/s/AKfycbxc8TGBVPY_zn2174v-i3UhcnS5I_P4qaKXOqEyFv4oHkcqqM5JeswpGiy4CYbTzfE/exec";
   constructor(private http:HttpClient) { }
 
-  // getproducts(){
-  //   const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/projects.json';
-  //   return this.http.get(url);
+  getproducts(){
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/projects.json';
+    return this.http.get(url);
 
-  // }
-  // gettechnologies(){
-  //   const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/technologies.json';
-  //   return this.http.get(url);
-  // }
-  // getjourney(){
-  //   const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/journey.json';
-  //   return this.http.get(url);
-  // }
+  }
+  gettechnologies(){
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/technologies.json';
+    return this.http.get(url);
+  }
+  getjourney(){
+    const url = 'https://raw.githubusercontent.com/youmansoor/portfolio/refs/heads/file-data/journey.json';
+    return this.http.get(url);
+  }
   // getfeedback():Observable<feedback[]>{
   //   return this.http.get<feedback[]>(this.url);
   // }

@@ -21,7 +21,7 @@ export class ContactComponent {
   //     this.feedbacks=data;
   //   })
   // }
-  adddata(data: any) {
+  add(data: any) {
   fetch(this.url, {
     method: "POST",
     mode: "no-cors",
